@@ -1,4 +1,8 @@
-public class Triangulo {
+package com.generation.clases;
+
+import com.generation.interfaces.GeoFig;
+
+public class Triangulo implements GeoFig{
 	private String name;
 	private double base;
 	private double altura;
@@ -45,4 +49,28 @@ public class Triangulo {
 	public String toString() {
 		return "Triángulo [name=" + name + ", base=" + base + ", altura=" + altura + ", lado=" + lado + "]";
 	}//toString
+
+	@Override
+	public String getNombre() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return this.calcularArea();
+	}
+
+	@Override
+	public double getPerimetro() {
+		// TODO Auto-generated method stub
+		return this.calcularPerimetro();
+	}
+
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }//class Triangulo
